@@ -1,0 +1,8 @@
+resilience4j:
+  rate-limiter:
+    instances:
+      orderService:
+        registerHealthIndicator: false
+        limitForPeriod: 2
+        limitRefreshPeriod: 5s
+        timeoutDuration: 3s
